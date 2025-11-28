@@ -2,7 +2,7 @@
 
 This Python script manages the "Panel One" backend, utilizing the Google GenAI API to generate stories and images based on a set of input images.
 
-![Panel One Result](sample_output/panel_one_result.png)
+
 
 ## Prerequisites
 
