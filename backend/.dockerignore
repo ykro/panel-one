@@ -1,0 +1,7 @@
+client.py
+.env
+.gcp/
+.git
+.venv
+__pycache__
+*.pyc

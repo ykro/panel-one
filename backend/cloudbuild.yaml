@@ -1,0 +1,56 @@
+steps:
+  # Build API Image
+  - name: 'gcr.io/cloud-builders/docker'
+    args: ['build', '-t', 'gcr.io/$PROJECT_ID/panel-one-api', '-f', 'Dockerfile', '.']
+  
+  # Build Worker Image
+  - name: 'gcr.io/cloud-builders/docker'
+    args: ['build', '-t', 'gcr.io/$PROJECT_ID/panel-one-worker', '-f', 'Dockerfile.worker', '.']
+
+  # Push Images
+  - name: 'gcr.io/cloud-builders/docker'
+    args: ['push', 'gcr.io/$PROJECT_ID/panel-one-api']
+  - name: 'gcr.io/cloud-builders/docker'
+    args: ['push', 'gcr.io/$PROJECT_ID/panel-one-worker']
+
+  # Deploy API Service
+  - name: 'gcr.io/google.com/cloudsdktool/cloud-sdk'
+    entrypoint: gcloud
+    args:
+      - 'run'
+      - 'deploy'
+      - 'panel-one-api'
+      - '--image'
+      - 'gcr.io/$PROJECT_ID/panel-one-api'
+      - '--region'
+      - 'us-central1'
+      - '--allow-unauthenticated'
+      - '--set-env-vars'
+      - 'PROJECT_ID=$PROJECT_ID,BUCKET_NAME=panel-one-outputs'
+      - '--set-secrets'
+      - 'GEMINI_API_KEY=GEMINI_API_KEY:latest,REDIS_URL=REDIS_URL:latest'
+
+  # Deploy Worker Service
+  - name: 'gcr.io/google.com/cloudsdktool/cloud-sdk'
+    entrypoint: gcloud
+    args:
+      - 'run'
+      - 'deploy'
+      - 'panel-one-worker'
+      - '--image'
+      - 'gcr.io/$PROJECT_ID/panel-one-worker'
+      - '--region'
+      - 'us-central1'
+      - '--no-allow-unauthenticated'
+      - '--no-cpu-throttling'
+      - '--min-instances=1'
+      - '--max-instances=5'
+      - '--memory=2Gi'
+      - '--set-env-vars'
+      - 'PROJECT_ID=$PROJECT_ID,BUCKET_NAME=panel-one-outputs'
+      - '--set-secrets'
+      - 'GEMINI_API_KEY=GEMINI_API_KEY:latest,REDIS_URL=REDIS_URL:latest'
+
+images:
+  - 'gcr.io/$PROJECT_ID/panel-one-api'
+  - 'gcr.io/$PROJECT_ID/panel-one-worker'

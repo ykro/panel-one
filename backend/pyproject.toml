@@ -1,0 +1,35 @@
+[project]
+name = "panel-one-backend"
+version = "0.1.0"
+description = "Backend for Panel One"
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = [
+    "fastapi",
+    "uvicorn",
+    "arq",
+    "google-genai",
+    "google-cloud-storage",
+    "pydantic-settings",
+    "python-dotenv",
+    "python-multipart",
+    "structlog",
+    "pillow",
+    "requests",
+    "rich",
+    "typer",
+    "redis",
+]
+
+[project.scripts]
+start = "server:start"
+worker = "run_worker:main"
+client = "client:app"
+setup = "setup_gcs:main"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.hatch.build.targets.wheel]
+packages = ["."]

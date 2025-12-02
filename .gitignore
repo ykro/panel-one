@@ -24,3 +24,4 @@ Thumbs.db
 # Project specific
 output/
 *.log
+test-assets/
