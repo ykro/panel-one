@@ -38,8 +38,15 @@ This is a Python-based CLI tool that handles the core logic:
 [Read the Scripts Documentation](script/README.md) for installation and usage instructions.
 
 ### Backend
-*(Coming Soon)*
-Details about the backend API will be added here.
+Located in `backend/`.
+A robust, asynchronous backend service built with FastAPI, Arq, and Google Cloud Platform.
+Key features:
+- **API**: FastAPI service for job submission and status polling.
+- **Worker**: Asynchronous worker using Arq and Redis for processing heavy AI tasks.
+- **Storage**: Google Cloud Storage integration for handling inputs and outputs.
+- **Deployment**: Ready for Google Cloud Run (Service & Worker).
+
+[Read the Backend Documentation](backend/README.md) for setup, local development, and deployment instructions.
 
 ### Frontend
 *(Coming Soon)*
