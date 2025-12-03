@@ -6,7 +6,9 @@ if [ ! -f .env ]; then
     echo "Warning: .env file not found. Make sure you have configured your environment."
 else
     # Export variables from .env
-    export $(grep -v '^#' .env | xargs)
+    set -a
+    source .env
+    set +a
 fi
 
 # Function to update secret

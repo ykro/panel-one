@@ -15,10 +15,9 @@ app = typer.Typer()
 console = Console()
 
 # Load environment variables
-# Try loading from current directory or parent directory
-load_dotenv()
-if not os.getenv("GEMINI_API_KEY"):
-    load_dotenv(Path(__file__).parent.parent / ".env")
+# Explicitly load from the .env file in the script directory
+env_path = Path(__file__).parent / ".env"
+load_dotenv(dotenv_path=env_path, override=True)
 
 API_KEY = os.getenv("GEMINI_API_KEY")
 
