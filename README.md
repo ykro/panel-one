@@ -49,8 +49,16 @@ Key features:
 [Read the Backend Documentation](backend/README.md) for setup, local development, and deployment instructions.
 
 ### Frontend
-*(Coming Soon)*
-Details about the frontend application will be added here.
+Located in `frontend/`.
+A modern, responsive web interface built with Next.js 16 and React 19.
+Key features:
+- **Interactive UI**: Drag-and-drop file upload and real-time progress tracking.
+- **Premium Design**: Polished aesthetics using TailwindCSS and Framer Motion.
+- **Real-time Updates**: WebSocket integration for live status updates from the backend.
+- **Resiliency**: Built-in watchdog for network fault tolerance and session persistence.
+- **Secure**: Image proxying for safe downloads and proper deployment configuration for Cloud Run.
+
+[Read the Frontend Documentation](frontend/README.md) for local development and deployment details.
 
 ## Getting Started
 
