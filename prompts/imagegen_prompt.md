@@ -1,26 +1,29 @@
-## INSTRUCCIÓN TÉCNICA INICIAL
-Analiza primero las imágenes de referencia adjuntas. Extrae los rasgos faciales, peinados y vestuario clave de los personajes principales. La similitud con las fotografías debe ser la mayor posible. Debes mantener esta identidad constante, adaptando sus proporciones al estilo manga y asegurando que tanto su rasgos físicos más importantes como su **PALETA DE COLORES** (cabello, ojos, ropa) coincida rigurosamente con las referencias en toda la página generada.
+## INITIAL TECHNICAL INSTRUCTION: REFERENCE ANALYSIS & FIDELITY
+First, exhaustively analyze the attached reference images. Extract the key facial features, hairstyles, and exact clothing details of the main characters. 
 
-## OBJETIVO
-Genera **UNA SOLA IMAGEN ** que capture una página física completa de un cómic manga profesional finalizado a todo color.
+**HIGHEST PRIORITY:** The visual likeness to the provided photographs/images must be exact. You must maintain this identity consistent, adapting their proportions to the manga style but ensuring that their most important physical traits and **COLOR PALETTE** (hair, eyes, clothing) match the references rigorously throughout the entire generated page.
 
-## ESTILO VISUAL Y MEDIO
-* **Estilo:** Manga moderno a todo color (similar a un "webtoon" de alta calidad o una página a color de revista).
-* **Acabado:** La imagen debe parecer una impresión final de alta calidad.
-* **Técnica:** Lineart (entintado) limpio y digital. Coloreado vibrante y profesional, utilizando principalmente un estilo **"cel-shading"** (sombras duras y bloques de color definidos para dar volumen) en los personajes, con iluminación dramática y colores ricos y saturados.
-* **Soporte:** El papel debe verse liso y de alta calidad, tipo papel ilustración.
+## OBJECTIVE
+Generate **A SINGLE IMAGE** that captures a complete physical page of a finished professional full-color manga comic.
 
-## ESTRUCTURA Y MAQUETACIÓN (CON MÁRGENES)
-* La hoja debe contener una composición dinámica de viñetas estilo manga, organizadas en orden narrativo de lectura occidental (izquierda a derecha, arriba a abajo).
-* **IMPORTANTE:** La composición debe mantener **MÁRGENES BLANCOS** limpios alrededor de todo el conjunto de viñetas. **Ninguna viñeta debe llegar al borde del papel.** Todas las viñetas deben estar contenidas dentro del área segura de impresión.
+## VISUAL STYLE AND MEDIUM
+* **Style:** Modern full-color Manga (similar to a high-quality "webtoon" or a color magazine page).
+* **Finish:** The image must look like a high-quality final print.
+* **Technique:** Clean digital Lineart (inking). Vibrant and professional coloring, mainly using a **"cel-shading"** style (hard shadows and defined color blocks to give volume) on characters, with dramatic lighting and rich, saturated colors.
+* **Medium:** The paper should look smooth and high-quality, like illustration paper.
 
-## INTEGRACIÓN DE TEXTO Y SFX
-* El diálogo debe estar integrado **DENTRO** de las viñetas utilizando **GLOBOS DE TEXTO** (speech balloons/dialogue globes) de formas variadas según la emoción.
-* Los cuadros de narración pueden ser rectangulares.
-* Incluye **EFECTOS DE SONIDO (SFX)** coloreados y estilizados, integrados visualmente en la acción.
+## STRUCTURE AND LAYOUT (WITH MARGINS)
+* The sheet must contain a dynamic composition of manga-style panels, organized in Western reading order (left to right, top to bottom).
+* **IMPORTANT:** The composition must maintain clean **WHITE MARGINS** around the entire set of panels. **No panel should touch the edge of the paper.** All panels must be contained within the safe print area.
 
-## CONSISTENCIA DE PERSONAJES (CRUCIAL)
-Basándote en las referencias, mantén la consistencia visual y de color de los personajes principales en cada panel.
+## TEXT AND SFX INTEGRATION (LANGUAGE RULE)
+* Dialogue must be integrated **INSIDE** the panels using **SPEECH BALLOONS** (bubbles) of varied shapes according to emotion.
+* **CRITICAL LANGUAGE CONSTRAINT:** While this prompt is in English, **ALL TEXT INSIDE THE SPEECH BUBBLES MUST BE WRITTEN IN SPANISH.**
+* Narration boxes can be rectangular.
+* Include colored and stylized **SOUND EFFECTS (SFX)**, visually integrated into the action.
 
-## SECUENCIA NARRATIVA A DESARROLLAR
-Desarrolla la historia en una sola página con márgenes, usando lenguaje visual de manga a color y poniendo los diálogos dentro de globos de texto:
+## CHARACTER CONSISTENCY (CRUCIAL)
+Based on the references, maintain strict visual and color consistency of the main characters in every single panel. Faces and clothes must not morph between panels.
+
+## NARRATIVE SEQUENCE TO DEVELOP
+Develop the story on a single page with margins, using color manga visual language and placing the dialogues inside speech bubbles based on the following script:
