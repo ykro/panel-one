@@ -26,7 +26,7 @@ steps:
       - 'us-central1'
       - '--allow-unauthenticated'
       - '--set-env-vars'
-      - 'PROJECT_ID=$PROJECT_ID,BUCKET_NAME=panel-one-outputs'
+      - 'PROJECT_ID=$PROJECT_ID,BUCKET_NAME=ai-exp-panel-one-outputs'
       - '--set-secrets'
       - 'GEMINI_API_KEY=GEMINI_API_KEY:latest,REDIS_URL=REDIS_URL:latest'
 
@@ -47,7 +47,7 @@ steps:
       - '--max-instances=5'
       - '--memory=2Gi'
       - '--set-env-vars'
-      - 'PROJECT_ID=$PROJECT_ID,BUCKET_NAME=panel-one-outputs'
+      - 'PROJECT_ID=$PROJECT_ID,BUCKET_NAME=ai-exp-panel-one-outputs'
       - '--set-secrets'
       - 'GEMINI_API_KEY=GEMINI_API_KEY:latest,REDIS_URL=REDIS_URL:latest'
 
